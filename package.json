@@ -9,7 +9,7 @@
     "web": "expo start --web",
     "test": "jest",
     "test:watch": "jest --watch",
-    "postinstall": "patch-package && node scripts/fix-expo-font-tsconfig.js"
+    "postinstall": "patch-package || true && node scripts/fix-expo-font-tsconfig.js"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.0",
